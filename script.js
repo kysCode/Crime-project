@@ -35,6 +35,41 @@ function showSafetyTips() {
     }
 }
 
+function handleSubmit(event) {
+    // Prevent the default form submission behavior
+    event.preventDefault();
+    
+    // Get the value entered by the user
+    var userInput = document.getElementById("crimeForm").value;
+    
+    // Create a new paragraph element
+    var newParagraph = document.createElement("p");
+    
+    // Create a text node with the user input
+    var textNode = document.createTextNode(userInput);
+    
+    // Append the text node to the paragraph element
+    newParagraph.appendChild(textNode);
+    
+    // Append the paragraph element to the result div
+    document.getElementById("result").appendChild(newParagraph);
+    
+    // Clear the input field after displaying the input
+    document.getElementById("crimeForm").value = "";
+
+    hideInputBox()
+}
+
+function hideInputBox() {
+    var reportFormSection = document.getElementById('reportForm');
+    
+    if (reportFormSection.style.display === 'none') {
+        safetyTipsSection.style.display = 'block';
+    } else {
+        reportFormSection.style.display = 'none';
+    }
+}
+
 /*
 function handleForm() {
     document.getElementById('crimeForm').addEventListener('submit', function(event) {

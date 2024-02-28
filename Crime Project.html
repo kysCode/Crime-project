@@ -68,10 +68,14 @@
 
                 <label for="description">Description:</label>
                 <textarea id="description" name="description" rows="4" required></textarea>
+                <button onclick="handleSubmit(event)">Post</button>
 
-                <button type="submit">Submit Report</button>
+                <button type="submit">Home</button>
             </form>
         </div>
+        
+        <!-- Div to display the result -->
+        <div id="result"></div>
 
     </div>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin=""/>
