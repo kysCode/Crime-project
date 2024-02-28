@@ -1,6 +1,6 @@
 Styles.css
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Noto Sans', 'Arial', sans-serif;
     margin: 0;
     padding: 0;
     display: flex;
@@ -53,5 +53,5 @@ body {
  button:hover {
     background-color: #73e879;
     border-radius: 10%; /* Make it more round on hover */
-    
+    transform: scale(0.95);
  }
