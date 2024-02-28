@@ -20,10 +20,19 @@
             <input type="text" id="crimeLocation" placeholder="Enter the crime location" required>
  
             <button onclick="submitForm()">Submit</button>
+           <p id="errorMessage" style="color: red; display: none;">Please fill in all fields.</p>
         </div>
         <div id="successMessage" style="display: none;">
-            <p>Thank you for reporting the crime. Your report has been submitted successfully.</p>
-            <!-- You can add more content here for the second page -->
+            <p>Welcome to the Crime Reporting Portal</p>
+            <button onclick="showSafetyTips()">Show Safety Tips</button>
+            <div id="safetyTips" style="display: none;">
+                <!-- Safety tips content goes here -->
+                <h3>Safety Tips</h3>
+                <ul>
+                    <li>stay safe</li>
+                    <!-- Add more tips as needed -->
+                </ul>
+            </div>
         </div>
     </div>
     <script src="script.js"></script>
