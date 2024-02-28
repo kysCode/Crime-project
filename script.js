@@ -4,6 +4,8 @@ function submitForm() {
     var email = document.getElementById('email').value;
     var crimeLocation = document.getElementById('crimeLocation').value;
 
+    localStorage.setItem('crimeLocation', crimeLocation);
+
     // Check if all fields are filled
     if (name.trim() === '' || email.trim() === '' || crimeLocation.trim() === '') {
         // Display error message

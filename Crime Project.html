@@ -21,19 +21,23 @@
  
             <button onclick="submitForm()">Submit</button>
            <p id="errorMessage" style="color: red; display: none;">Please fill in all fields.</p>
+
+           <img src="person.jpg" alt="Person" width="300" height="200">
+
         </div>
         <div id="successMessage" style="display: none;">
             <p>Welcome to the Crime Reporting Portal</p>
-            <button onclick="showSafetyTips()">Show Safety Tips</button>
+            <a href="https://www.met.police.uk/cp/crime-prevention/personal-safety-how-to-stay-safe/"><button onclick="showSafetyTips()">Show Safety Tips</button></a>
             <div id="safetyTips" style="display: none;">
-                <!-- Safety tips content goes here -->
-                <a href="https://www.met.police.uk/cp/crime-prevention/personal-safety-how-to-stay-safe/">Stay safe</a>
                 <ul>
                     <!-- Add more tips as needed -->
                 </ul>
             </div>
         </div>
     </div>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin=""/>
+    <!-- Leaflet JavaScript -->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin=""></script>
     <script src="script.js"></script>
  </body>
 </html>
